@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
         window.statusBarColor = resources.getColor(R.color.black)
 
         setContent {
-            MSATASKTheme {
+            MSATASKTheme(darkTheme = false) {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
 
                     val navController = rememberNavController()
